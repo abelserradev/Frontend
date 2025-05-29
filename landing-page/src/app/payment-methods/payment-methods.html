@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel de Métodos de Pago</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e1b4b',
+            secondary: '#5b21b6',
+          },
+          animation: {
+            'infinite-scroll': 'infinite-scroll 30s linear infinite',
+          },
+          keyframes: {
+            'infinite-scroll': {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .payment-icon {
+      width: 100px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 8px;
+    }
+
+    .payment-icon img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .payment-marquee {
+      display: flex;
+      width: 200%;
+      animation: infinite-scroll 30s linear infinite;
+    }
+
+    .payment-marquee:hover {
+      animation-play-state: paused;
+    }
+
+    .payment-method-container {
+      display: flex;
+      gap: 16px;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+  <!-- Sección de métodos de pago -->
+  <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row items-center">
+        <!-- Columna de texto -->
+        <div class="lg:w-2/5 mb-10 lg:mb-0 lg:pr-10">
+          <h4 class="text-xl md:text-2xl font-bold mb-4 tracking-wide uppercase">Ofrecemos +70 métodos de pago locales</h4>
+          <p class="text-blue-100 mb-6">
+            Aceptamos múltiples formas de pago para tu comodidad. Transacciones seguras y rápidas con los sistemas más populares.
+          </p>
+          <div class="flex items-center">
+            <div class="bg-yellow-400 text-primary rounded-full p-2 mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <p class="text-sm">Protegido con cifrado de última generación</p>
+          </div>
+        </div>
+
+        <!-- Carrusel de métodos de pago -->
+        <div class="lg:w-3/5 w-full overflow-hidden py-4">
+          <div class="payment-marquee">
+            <div class="payment-method-container">
+              <!-- Métodos de pago -->
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Binance" alt="Binance">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Wally" alt="Wally">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=PayPal" alt="PayPal">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=PagoMóvil" alt="Pago Móvil">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=BancoVzla" alt="Banco de Venezuela">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Bancolombia" alt="Bancolombia">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Lemon" alt="Lemon">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=MercadoPago" alt="Mercado Pago">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Banesco" alt="Banesco">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Mercantil" alt="Mercantil">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Provincial" alt="Provincial">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Zelle" alt="Zelle">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Zinli" alt="Zinli">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Airtm" alt="Airtm">
+              </div>
+
+              <!-- Repetir los mismos métodos para el efecto continuo -->
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Binance" alt="Binance">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Wally" alt="Wally">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=PayPal" alt="PayPal">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=PagoMóvil" alt="Pago Móvil">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=BancoVzla" alt="Banco de Venezuela">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Bancolombia" alt="Bancolombia">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Lemon" alt="Lemon">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=MercadoPago" alt="Mercado Pago">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Banesco" alt="Banesco">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Mercantil" alt="Mercantil">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Provincial" alt="Provincial">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Zelle" alt="Zelle">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Zinli" alt="Zinli">
+              </div>
+              <div class="payment-icon">
+                <img src="https://via.placeholder.com/100x30/1e1b4b/ffffff?text=Airtm" alt="Airtm">
+              </div>
+            </div>
+          </div>
+
+          <!-- Indicadores de pagos adicionales -->
+          <div class="mt-8 text-center">
+            <div class="inline-flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
+              <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Transferencias Bancarias</span>
+              <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Pago Móvil</span>
+              <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Efectivo</span>
+              <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Criptomonedas</span>
+              <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Tarjetas de Débito</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de años - como en la imagen -->
+  <section class="py-10 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-center gap-6">
+        <div class="flex items-center">
+          <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+          <span>2021</span>
+        </div>
+        <div class="flex items-center">
+          <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+          <span>2022</span>
+        </div>
+        <div class="flex items-center">
+          <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+          <span>2023</span>
+        </div>
+        <div class="flex items-center">
+          <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+          <span>2024</span>
+        </div>
+        <div class="font-bold text-primary">O LIBRÓN</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

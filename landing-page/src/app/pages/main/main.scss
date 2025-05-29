@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos personalizados */
+.hero-section {
+  @apply relative bg-gradient-to-r from-indigo-900 to-purple-800 text-white py-20;
+}
