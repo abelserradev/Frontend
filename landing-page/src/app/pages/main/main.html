@@ -1,45 +1,78 @@
 <!-- Hero Section -->
-<section class="relative bg-gradient-to-r from-indigo-900 to-purple-800 text-white py-20">
-  <h1 class="text-4xl font-bold text-center mb-4">La SuperApp de Stablecoins para Latinoamérica</h1>
-    <p class="text-lg text-center mx-4">
-      Compra y vende Tether usando saldo Zinli, Wally, Pago móvil, PayPal, Zelle y más. Publica tus propios anuncios P2P y empieza a ganar dinero por internet.
-    </p>
-    <div class="mt-8 flex space-x-4">
-      <a href="#" class="bg-green-600 text-white p-2 rounded hover:bg-green-700">DISPONIBLE EN Google Play</a>
-      <a href="#" class="bg-black text-white p-2 rounded hover:bg-gray-800">Consíguelo en el App Store</a>
+<section class="relative bg-gradient-to-r from-indigo-900 to-purple-800 text-white py-32 min-h-screen flex items-center">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+
+    <div class="w-full md:w-1/2 flex justify-center md:justify-end pt-10 order-0 md:order-2">
+      <img src="hero-es.webp" alt="SuperApp" class="w-[900px] h-auto">
+    </div>
+    <!-- Contenido a la izquierda -->
+    <div class="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0 mt-20">
+      <h1 class="2xl:text-7xl text-5xl font-bold mb-6 font-rubik">
+        La SuperApp de Stablecoins para Latinoamérica
+      </h1>
+      <p class="text-xl md:text-2xl mb-6 max-w-xl mx-auto md:mx-0 font-rubik text-justify">
+        Compra y vende Tether usando saldo Zinli, Wally, Pago móvil, PayPal, Zelle y más.
+        Publica tus propios anuncios P2P y empieza a ganar dinero por internet.
+      </p>
+
+      <!-- Botones de descarga con imágenes -->
+      <div class="flex flex-col sm:flex-row w-full space-y-4 sm:space-y-0 sm:space-x-4 mb-6 justify-center md:justify-start">
+        <a href="https://play.google.com/store/apps/details?id=io.eldorado.app" target="_blank">
+          <img src="android_es.webp" alt="Disponible en Google Play" class=" lg:w-48 h-auto hover:opacity-80">
+        </a>
+        <a href="https://apps.apple.com/co/app/el-dorado-p2p/id1591303547" target="_blank">
+          <img src="iphone_es.webp" alt="Consíguelo en el App Store" class=" lg:w-48 h-auto hover:opacity-80">
+        </a>
+      </div>
+
+      <!-- Iconos debajo de los botones -->
+      <div class="flex justify-center md:justify-start space-x-4">
+        <img src="USDT.webp" alt="Icono USDT" class="w-16 h-16">
+        <img src="usdc.webp" alt="Icono USDC" class="w-16 h-16">
+      </div>
     </div>
 
-    <app-payment-methods></app-payment-methods>
+  </div>
 </section>
 
-<!-- Services Section -->
-<section class="py-20 bg-gray-50">
-  <div class="container">
-    <h1>La manera más fácil de comprar y vender dólares digitales.</h1>
-    <p>Compra y vende USDT en Argentina, Bolivia, Brasil, Colombia, Panamá, Perú y Venezuela.</p>
 
-    <div class="cards">
-      <div class="card">
-        <i class="fas fa-money-bill-wave"></i>
-        <h3>Haz pagos en USDT</h3>
+
+  <app-payment-methods></app-payment-methods>
+
+<!-- Services Section -->
+<section class="py-20 bg-gray-50 w-full">
+  <div class="container flex flex-col lg:max-w-[1280px] px-8 mx-auto justify-center items-center gap-y-6">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-x-10 mb-10">
+      <div>
+        <h1 class="text-4xl font-bold text-center mb-6">La manera más fácil de comprar y vender dólares digitales.</h1>
+        <p class="text-xl text-center mb-6">Compra y vende USDT en Argentina, Bolivia, Brasil, Colombia, Panamá, Perú y Venezuela.</p>
+      </div>
+
+
+      <div class="video">
+        <iframe height="315" width="400" src="https://www.youtube.com/embed/cM7BvnmsgbM?si=xAgt626E1pavNJX-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+    <div class="cards flex flex-col lg:flex-row items-stretch gap-y-10 lg:gap-x-10">
+      <div class="card bg-[#f8f8f8] py-4 px-8 rounded-lg text-center border border-black/20 flex flex-col items-center">
+        <img width="70" src="https://eldorado.io/static/df51bb86605e7aa4ebe0ecbee074aecf/578e8/featureOne.webp" alt="">
+        <h3 class="mb-3">Haz pagos en USDT</h3>
         <p>Haz pagos en USDT en Tron o Arbitrum sin preocuparte por tener el token para pagar las comisiones.</p>
       </div>
-      <div class="card">
-        <i class="fas fa-exchange-alt"></i>
-        <h3>Mueve tu dinero</h3>
+      <div class="card bg-[#f8f8f8] py-4 px-8 rounded text-center border border-black/20 flex flex-col items-center">
+        <img width="70" src="https://eldorado.io/static/0a7465c83a23228bf9718c5f525837c6/578e8/featureTwo.webp" alt="">
+        <h3 class="mb-3">Mueve tu dinero</h3>
         <p>Mueve tu dinero entre apps como Zelle, PayPal, Zinli, en cuestión de minutos.</p>
       </div>
-      <div class="card">
-        <i class="fas fa-chart-line"></i>
-        <h3>Genera ganancias diarias</h3>
+      <div class="card bg-[#f8f8f8] py-4 px-8 rounded text-center border border-black/20 flex flex-col items-center">
+        <img width="70" src="https://eldorado.io/static/d18c372666df05ec3b849287d62953c3/578e8/featureThree.webp" alt="">
+        <h3 class="mb-3">Genera ganancias diarias</h3>
         <p>Genera ganancias diarias depositando dólares digitales en tu caja fuerte de El Dorado Gana.</p>
       </div>
     </div>
-    <div class="video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
-      <p>Ver en YouTube</p>
-    </div>
-    <button class="download-button">Descarga El Dorado P2P</button>
+
   </div>
 </section>
 
@@ -53,12 +86,14 @@
 <!-- Contact Section -->
 <section class="py-20 bg-gray-900 text-white">
   <div class="container mx-auto px-4 text-center">
-    <h2 class="text-3xl font-bold mb-6">¿Listo para transformar tu negocio?</h2>
+    <h2 class="text-3xl font-bold mb-6">¿Quieres tradear?</h2>
     <p class="text-xl mb-10 max-w-2xl mx-auto">
-      Contáctanos hoy mismo para una consulta gratuita
+      Descarga la wallet de El dorado y tradea, compra y vende criptomonedas
     </p>
     <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">
-      Contactar ahora
+      Comenzar
     </button>
   </div>
 </section>
+
+

@@ -1,21 +1,42 @@
-<header class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+<header class="fixed w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm mb-10">
   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+ <!-- Logo + Menú -->
+  <div class="flex items-center space-x-12">
     <!-- Logo -->
     <div class="flex items-center">
-      <span class="text-2xl font-bold text-indigo-900">ELDORADO</span>
+      <img src="/logo.webp" alt="ELDORADO logo" class="h-[50px] w-auto" />
     </div>
 
-    <!-- Navigation -->
+    <!-- Barra de menú -->
     <nav class="hidden md:block">
       <ul class="flex space-x-8">
-        <li><a href="#" class="font-medium hover:text-indigo-600 transition">INICIO</a></li>
-        <li><a href="#" class="font-medium hover:text-indigo-600 transition">NOSOTROS</a></li>
-        <li><a href="#" class="font-medium hover:text-indigo-600 transition">GUÍA</a></li>
-        <li><a href="#" class="font-medium hover:text-indigo-600 transition">BLOG</a></li>
+        <li>
+          <a routerLink="/main" routerLinkActive="text-[#ffb300]" class="font-medium transition">INICIO</a>
+        </li>
+        <li>
+          <a routerLink="" routerLinkActive="text-[#ffb300]" class="font-medium transition">NOSOTROS</a>
+        </li>
+        <li>
+          <a routerLink="" routerLinkActive="text-[#ffb300]" class="font-medium transition">GUÍA</a>
+        </li>
+        <li>
+          <a routerLink="" routerLinkActive="text-[#ffb300]" class="font-medium transition">BLOG</a>
+        </li>
       </ul>
     </nav>
+  </div>
 
-    <!-- Mobile Menu Button -->
+    <!-- Botones de sesión -->
+  <div class="flex items-center space-x-4">
+    <button class="px-4 py-2 text-sm font-medium border border-[#4dd0e1] text-[#4a4a4b] rounded bg-[#4dd0e1] text-white transition">
+      Iniciar sesión
+    </button>
+    <button class="px-4 py-2 text-sm font-medium bg-[#ffb300] text-white rounded hover:bg-[#e6a800] transition">
+      Registrarse
+    </button>
+  </div>
+
+    <!-- Version mobile -->
     <button class="md:hidden text-gray-600">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />

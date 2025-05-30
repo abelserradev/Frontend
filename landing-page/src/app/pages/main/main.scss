@@ -1,8 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.subtitle {
+  margin-bottom: 2.5rem;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 1.8rem;
+}
 
-/* Estilos personalizados */
-.hero-section {
-  @apply relative bg-gradient-to-r from-indigo-900 to-purple-800 text-white py-20;
+@media (min-width: 1360px) {
+    .subtitle {
+        width: 90%;
+    }
+}
+
+ .subtitle {
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 1.8rem;
 }

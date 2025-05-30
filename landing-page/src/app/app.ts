@@ -5,6 +5,7 @@ import { Footer } from './components/footer/footer';
 import { Header } from './components/header/header';
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -12,6 +13,7 @@ import { Header } from './components/header/header';
     RouterOutlet,
     Header,
     Footer,
+    RouterOutlet,
 
   ],
   template: `

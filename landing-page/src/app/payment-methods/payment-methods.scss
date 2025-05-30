@@ -1,0 +1,51 @@
+.payment-icon {
+      width: 100px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      padding: 8px;
+      flex-shrink: 0; /* Impide que los iconos se encojan */
+    }
+
+    .payment-icon img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .payment-marquee {
+      display: flex;
+      width: 200%; /* Contenedor con dos copias del contenido */
+      animation: infinite-scroll 30s linear infinite;
+    }
+
+    .payment-marquee:hover {
+      animation-play-state: paused;
+    }
+
+    .payment-method-container {
+      display: flex;
+      gap: 16px;
+      width: 100%; /* Cada copia debe ocupar el 50% del contenedor padre */
+    }
+
+    /* Animación corregida */
+    @keyframes infinite-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Contenedor principal del carrusel */
+    .carousel-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+.contenedor {
+    background-color: rgb(238, 238, 238);
+    padding: 1.5rem 4%;
+    position: relative;
+    z-index: 2;
+}
